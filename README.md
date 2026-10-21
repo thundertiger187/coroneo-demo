@@ -19,9 +19,12 @@ Meine Termine (stornieren, .ics), Terminerinnerungen WhatsApp/SMS (Demo-Vorschau
 - **Platzhalter (Demo):** alle Dauern, Arbeitszeiten/PINs der Mitarbeiter:innen, Demo-Termine & Kund:innen, „So geschlossen“ (abgeleitet),
   Aufteilung „kurz-mittel ab 45 € / lang ab 60 €“ bei *Für Ihn*. Siehe Kommentare `PLATZHALTER` in `js/config.js`.
 
-## Design „Rosso & Crema“
-Eigene Gestaltung: Crema-Basis, Nero-Hero mit roter Glut (Coroneo-Rot `#B3261E`, Gold `#A3812F` von coroneo.de), Bogen-/Arch-Formen,
-Marquee-Band, Pill-Buttons, feine Linien-Icons. Schriften lokal: Cormorant Garamond + Jost (SIL OFL 1.1), Yellowtail (Apache 2.0).
+## Design „Coroneo – Apple-Stil“
+Angelehnt an apple.com / iOS-Systemapps: heller Hintergrund `#f5f5f7`, weiße Inset-Karten und gruppierte Listen, viel Weißraum,
+große fette Überschriften mit enger Laufweite, graue Sekundärtexte, Segment-Steuerung, iOS-Schalter, Milchglas-Kopf und -Tab-Leiste
+(`backdrop-filter` + `-webkit-`, deckender Fallback), weiche Schatten, feine Linien-Icons, abgerundete Rechtecke statt Bögen.
+Coroneo-Rot `#B3261E` nur sparsam als Akzent. Logo: eigenes iOS-Squircle (Schwarz, weißes „C“, roter Punkt) – nicht das Salon-Logo.
+Schrift: System (SF Pro auf Apple-Geräten), sonst Inter (variabel, SIL OFL 1.1, lokal eingebunden).
 Keine Bilder oder Logo-Dateien von coroneo.de, keine kostenpflichtigen Template-Assets.
 
 ## Technik

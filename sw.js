@@ -1,6 +1,6 @@
 /* Service Worker – Cache-first für alle eigenen Dateien (offline-fähig).
    Bei Änderungen an Dateien VERSION erhöhen, damit Geräte die neue Fassung laden. */
-var VERSION = 'v1';
+var VERSION = 'v2';
 var CACHE = 'coroneo-kunden-' + VERSION;
 var ASSETS = [
   './',
@@ -14,12 +14,8 @@ var ASSETS = [
   './js/config.js',
   './js/booking.js',
   './js/app.js',
-  './assets/fonts/cormorant-latin.woff2',
-  './assets/fonts/cormorant-latin-ext.woff2',
-  './assets/fonts/cormorant-italic-latin.woff2',
-  './assets/fonts/jost-latin.woff2',
-  './assets/fonts/jost-latin-ext.woff2',
-  './assets/fonts/yellowtail-latin.woff2',
+  './assets/fonts/inter-latin.woff2',
+  './assets/fonts/inter-latin-ext.woff2',
   './icons/icon-192.png',
   './icons/icon-512.png',
   './icons/icon-512-maskable.png',

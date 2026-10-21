@@ -1,4 +1,4 @@
-/* Basis-Stylesheet – übernommen aus dem Prototyp (salon-app/css/style.css), Sand/Terrakotta, Cormorant Garamond + Jost (Design „Coroneo“ in coroneo.css) */
+/* Basis-Stylesheet – übernommen aus dem Prototyp (salon-app/css/style.css), System-Schrift SF Pro / Inter (Design „Coroneo – Apple-Stil“ in coroneo.css) */
 :root {
   --bg: #F6F1EA; --bg-deep: #EDE5DA; --surface: #FFFDF9; --ink: #241F1C; --ink-soft: #5C534B; --ink-mute: #8C8076;
   --line: #DDD3C6; --line-soft: #EAE2D7; --accent: #9C4A30; --accent-ink: #7E3A25; --accent-tint: #F1E2D9; --dark: #26201C;
@@ -6,8 +6,8 @@
   --radius: 18px; --radius-sm: 12px; --radius-xs: 8px;
   --shadow: 0 1px 2px rgba(36,31,28,.04), 0 12px 32px -12px rgba(36,31,28,.14);
   --shadow-lg: 0 30px 80px -20px rgba(36,31,28,.35), 0 0 0 1px rgba(36,31,28,.06);
-  --font-display: "Cormorant Garamond", Georgia, "Times New Roman", serif;
-  --font-body: "Jost", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-display: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", "Segoe UI", Roboto, sans-serif;
+  --font-body: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", "Segoe UI", Roboto, sans-serif;
   --row: 16px;
 }
 *, *::before, *::after { box-sizing: border-box; }

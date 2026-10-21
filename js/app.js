@@ -193,11 +193,12 @@
   function rStart() {
     var st = S.openState(), nf = S.nextFree(state(), shortestService()), mine = S.mine();
     $('#v-start').innerHTML =
-      '<div class="hero"><div class="hero-arch" aria-hidden="true"><span class="hero-wm">' + esc(C.wordmark || C.shortName) + '</span><span class="hero-wm-sub">' + esc(C.wordmarkSub || '') + '</span>' + SCISSORS + '</div>' +
+      '<div class="hero">' +
         '<span class="eyebrow">' + esc(C.heroEyebrow || C.claim) + '</span><h1>' + C.heroTitle + '</h1><p>' + esc(C.heroText) + '</p>' +
         '<div class="hero-btns"><a class="btn btn-light btn-lg" href="#buchen" id="cta-book">' + I.cal + 'Termin buchen</a><a class="btn btn-outline-light btn-lg" href="' + telHref + '" id="cta-call">' + I.phone + 'Anrufen</a></div>' +
-        (R.rating ? '<div class="hero-rating">' + stars(R.rating, 14) + '<span>' + String(R.rating).replace('.', ',') + ' · ' + R.count + ' Bewertungen auf Google</span></div>' : '') + '</div>' +
-      (C.heroTags ? '<div class="marquee" aria-hidden="true"><div class="marquee-track">' + C.heroTags.concat(C.heroTags).map(function (t) { return '<span>' + esc(t) + '</span>'; }).join('<i>✦</i>') + '<i>✦</i></div></div>' : '') +
+        (R.rating ? '<div class="hero-rating">' + stars(R.rating, 14) + '<span>' + String(R.rating).replace('.', ',') + ' · ' + R.count + ' Bewertungen auf Google</span></div>' : '') +
+        '<div class="hero-media" aria-hidden="true">' + LOGO_MARK + '<span class="hm-t">' + esc(C.wordmark || C.shortName) + '</span><span class="hm-s">' + esc(C.wordmarkSub || '') + '</span>' + SCISSORS + '</div>' +
+      '</div>' +
       reviewsCard('rev-start') +
       '<div class="tiles">' +
         '<a class="tile" href="#zeiten"><span class="k">Heute</span><span class="v"><span class="status ' + (st.open ? 'open' : 'closed') + '">' + (st.open ? 'Geöffnet' : 'Geschlossen') + '</span></span><span class="s">' + esc(st.sub) + '</span></a>' +
@@ -210,7 +211,8 @@
       teamHtml() + footLinks();
     updateInstallUI();
   }
-  var SCISSORS = '<svg class="hero-sc" viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><circle cx="34" cy="86" r="14"/><circle cx="86" cy="86" r="14"/><path d="M44 76L92 14M76 76L28 14"/></svg>';
+  var LOGO_MARK = '<svg class="logo-mark" viewBox="0 0 100 100"><path d="M0 30C0 8 8 0 30 0h40c22 0 30 8 30 30v40c0 22-8 30-30 30H30C8 100 0 92 0 70Z" fill="#1d1d1f"/><path d="M66.9 35.9A22 22 0 1 0 66.9 64.1" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round"/><circle cx="73.5" cy="50" r="5.5" fill="#E5352B"/></svg>';
+  var SCISSORS = '<svg class="hero-sc" viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="34" cy="86" r="14"/><circle cx="86" cy="86" r="14"/><path d="M44 76L92 14M76 76L28 14"/></svg>';
   function teamHtml() {
     var full = C.teamFull || {};
     return '<div class="sec-head"><span class="eyebrow">Ihr Team</span><h2>Fünf Profis, eine Familie</h2></div><div class="team-row" role="list">' + C.stylists.map(function (m) {

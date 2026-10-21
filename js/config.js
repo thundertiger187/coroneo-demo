@@ -10,7 +10,7 @@ window.SALON_CONFIG = {
   name: 'Coroneo Hairdesign',
   shortName: 'Coroneo',              // Name unter dem App-Symbol
   monogram: 'C',
-  wordmark: 'Coroneo',               // Schriftzug im Kopf (eigene Umsetzung in Yellowtail, NICHT das Original-Logo)
+  wordmark: 'Coroneo',               // Name im Kopf (Sans-Schriftzug neben eigenem Squircle-„C“, NICHT das Original-Logo)
   wordmarkSub: 'Hairdesign',
   claim: 'Der Friseur in Erkrath · seit 1970',
   heroEyebrow: 'Der Friseur in Erkrath · seit 1970',
