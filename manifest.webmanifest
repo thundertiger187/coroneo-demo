@@ -4,7 +4,7 @@
   "description": "Demo-App für Coroneo Hairdesign, Friseur in Erkrath – Leistungen, Preise, Öffnungszeiten, Anfahrt und Online-Termin. Keine offizielle App des Salons.",
   "lang": "de",
   "dir": "ltr",
-  "id": "./",
+  "id": "/coroneo-demo/",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
